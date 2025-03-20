@@ -17,19 +17,34 @@
 
 <h1>CWA Help Desk Appointment</h1>
 
+<p>
+    The Help Desk is located at ATC620. Open 10:30 to 19:00 Monday to Friday
+    Check Blackboard for when CWA tutors will be there.
+</p>
+
 <form method="post" action="http://mercury.swin.edu.au/it000000/formtest.php">
 
+    <fieldset>
+        <legend>Student Details</legend>
 	<!--Note we have to use a special escape character to print an apostrophe on the Web page -->
 	<p>
-        <label for="owner">Owner&apos;s Name</label> 
-		<input type="text" name= "owner" id="owner" required="required"/>
+        <label for="studentID">Student ID</label> 
+		<input type="int" name= "studentID" id="studentID" required="required"/>
 	</p>
 
 	<p>
-        <label for="email">Email</label> 
+        <label for="givenName">Given Name</label> 
 		<!--Use an HTML5 email control -->
-      <input type="email" name= "email" id="email" required="required"/>
+        <input type="string" name= "givenName" id="givenName" required="required"/>
 	</p>
+
+    <p>
+        <label for="familyName">Family Name</label> 
+		<!--Use an HTML5 email control -->
+        <input type="string" name= "familyName" id="familyName" required="required"/>
+    </p>
+
+    </fieldset>
 
 	<fieldset>
 		<legend>Cat Information Details</legend>
