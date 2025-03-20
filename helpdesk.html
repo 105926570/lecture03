@@ -29,7 +29,7 @@
 	<!--Note we have to use a special escape character to print an apostrophe on the Web page -->
 	<p>
         <label for="studentID">Student ID</label> 
-		<input type="int" name= "studentID" id="studentID" required="required"/>
+		<input type="int" name= "studentID" id="studentID" placeholder="123456789" required="required"/>
 	</p>
 
 	<p>
@@ -50,13 +50,13 @@
         <p>
             <!--radio buttons-->
 
-                <label for="COS10011">Male</label> 
+                <label for="COS10011">COS10011</label> 
 				<input type="radio" id="COS10011" name="unit" value="COS10011"/>
 
-                <label for="COS60004">Female</label> 
+                <label for="COS60004">COS60004</label> 
 				<input type="radio" id="COS60004" name="unit" value="COS60004"/>
 
-                <label for="COS60007">Female</label> 
+                <label for="COS60007">COS60007</label> 
 				<input type="radio" id="COS60007" name="unit" value="COS60007"/>
         </p>
 
@@ -108,80 +108,18 @@
     
 
     <fieldset>
+        <legend>Perferred Date/Time</legend>
         <!--date and time-->
+        <p>
+            Date
+            <label for="date">Date</label> 
+			<input type="date" name= "date" id="date" placeholder="dd-mm-yyyy" maxlength="10" size="10"/>
+        </p>
+        <p>
+            <label for="time">Time</label> 
+			<input type="time" name= "time" id="time" placeholder="00:00" maxlength="10" size="10"/>
+        </p>
     </fieldset>
-
-
-
-	<fieldset>
-		<legend>Cat Information Details</legend>
-
-		<p>
-            <label for="catname">Cat&apos;s Name</label> 
-			<input type="text" name= "catname" id="catname" maxlength="20" size="10" required="required"/>
-		</p>
-
-		<p>
-            <label for="breed">Breed</label> 
-			<select name="breed" id="breed">
-				<option value="british">British Shorthair</option>			
-				<option value="burmese">Burmese</option>
-				<option value="manx">Manx</option>
-				<option value="ragdoll">Ragdoll</option>
-				<option value="russian">Russian Blue</option>
-				<option value="siamese">Siamese</option>
-				<option value="other">Other</option>
-			</select>
-		</p>
-
-		<p>
-            <label for="dob">Date of Birth</label> 
-			<input type="date" name= "dob" id="dob" placeholder="dd-mm-yyyy" maxlength="10" size="10"/>
-		</p>
-
-		<fieldset>
-			<legend>Sex</legend>
-
-			<p>
-                <label for="male">Male</label> 
-				<input type="radio" id="male" name="sex" value="male"/>
-			</p>
-
-			<p>
-                <label for="female">Female</label> 
-				<input type="radio" id="female" name="sex" value="female"/>
-			</p>
-
-		</fieldset>
-
-		<fieldset>
-			<legend>Competition Categories</legend>
-
-			<p>Select which categories your would like your cat entered</p>
-
-			<p>
-                <label for="bb">Best of Breed</label> 
-				<input type="checkbox" id="bb" name="category[]" value="best" checked="checked"/>
-			</p>
-
-			<p>
-                <label for="cute">Cutest</label> 
-				<input type="checkbox" id="cute" name="category[]" value="cute"/>
-			</p>
-
-			<p>
-                <label for="ugly">Ugliest</label> 
-				<input type="checkbox" id="ugly" name="category[]" value="ugly"/>
-			</p>
-
-		</fieldset>
-
-		<p>
-            <label for="comments">Comments</label>
-			<textarea id="comments" name="comments" rows="4" cols="40"></textarea>
-		</p>
-
-	</fieldset>
 	  
 	<input type= "submit" value="Register"/>
 	<input type= "reset" value="Reset Form"/>
