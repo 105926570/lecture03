@@ -49,10 +49,30 @@
         <legend>Your unit</legend>
         <p>
             <!--radio buttons-->
+
+                <label for="COS10011">Male</label> 
+				<input type="radio" id="COS10011" name="unit" value="COS10011"/>
+
+                <label for="COS60004">Female</label> 
+				<input type="radio" id="COS60004" name="unit" value="COS60004"/>
+
+                <label for="COS60007">Female</label> 
+				<input type="radio" id="COS60007" name="unit" value="COS60007"/>
         </p>
 
         <p>
             <!-- tutor details -->
+
+            <label for="Tutor">Your Tutor</label> 
+			<select name="tutor" id="tutor">
+				<option value="british">British Shorthair</option>			
+				<option value="burmese">Burmese</option>
+				<option value="manx">Manx</option>
+				<option value="ragdoll">Ragdoll</option>
+				<option value="russian">Russian Blue</option>
+				<option value="siamese">Siamese</option>
+				<option value="other">Other</option>
+			</select>
         </p>
 
 
@@ -62,11 +82,26 @@
         <legend>Issue</legend>
         <p>
             <!--chekcboxes-->
+
+                <label for="HTML">HTML</label> 
+				<input type="checkbox" id="HTML" name="category[]" value="HTML"/>
+
+                <label for="CSS">Ugliest</label> 
+				<input type="checkbox" id="CSS" name="category[]" value="CSS"/>
+
+                <label for="PHP">HTML</label> 
+				<input type="checkbox" id="PHP" name="category[]" value="PHP"/>
+
+                <label for="MySQL">Ugliest</label> 
+				<input type="checkbox" id="MySQL" name="category[]" value="MySQL"/>
+
         </p>
 
 
         <p>
             <!--Description of issue-->
+            <label for="Description">Description</label>
+			<textarea id="comments" name="description" rows="4" cols="40"></textarea>
         </p>
     </fieldest>
 
