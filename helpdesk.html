@@ -11,7 +11,7 @@
 
 <body>
 
-<img src="logo.png">
+<img src="logo.png" alt="">
 
 <h1>CWA Help Desk Appointment</h1>
 
@@ -27,17 +27,17 @@
 	<!--Note we have to use a special escape character to print an apostrophe on the Web page -->
 	<p>
         <label for="studentID">Student ID</label> 
-		<input type="int" name= "studentID" id="studentID" placeholder="123456789" required="required"/>
+		<input type="number" name= "studentID" id="studentID" placeholder="123456789" required="required"/>
 	</p>
 
 	<p>
         <label for="givenName">Given Name</label> 
 		<!--Use an HTML5 email control -->
-        <input type="string" name= "givenName" id="givenName" placeholder="Jhon" required="required"/>
+        <input type="text" name= "givenName" id="givenName" placeholder="Jhon" required="required"/>
 
         <label for="familyName">Family Name</label> 
 		<!--Use an HTML5 email control -->
-        <input type="string" name= "familyName" id="familyName" placeholder="Doe" required="required"/>
+        <input type="text" name= "familyName" id="familyName" placeholder="Doe" required="required"/>
 	</p>
     </fieldset>
 
@@ -61,7 +61,7 @@
         <p>
             <!-- tutor details -->
 
-            <label for="Tutor">Your Tutor</label> 
+            <label>Your Tutor</label> 
 			<select name="tutor" id="tutor">
 				<option value="tutor1">Tutor 1</option>			
 				<option value="tutor2">Turor 2</option>
@@ -93,7 +93,7 @@
 
         <p>
             <!--Description of issue-->
-            <label for="Description">Description</label>
+            <label>Description</label>
 			<textarea id="comments" name="description" rows="4" cols="40"></textarea>
         </p>
 
@@ -107,11 +107,11 @@
         <p>
             Date
             <label for="date">Date</label> 
-			<input type="date" name= "date" id="date" placeholder="dd-mm-yyyy" maxlength="10" size="10"/>
+			<input type="text" name= "date" id="date" placeholder="dd-mm-yyyy" maxlength="10" size="10"/>
         </p>
         <p>
             <label for="time">Time</label> 
-			<input type="time" name= "time" id="time" placeholder="00:00" maxlength="10" size="10"/>
+			<input type="text" name= "time" id="time" placeholder="00:00" maxlength="10" size="10"/>
         </p>
     </fieldset>
 	  
